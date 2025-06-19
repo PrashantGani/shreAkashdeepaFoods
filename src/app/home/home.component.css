@@ -1,0 +1,332 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: white;
+  color: #fff;
+  padding: -1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#restoLogo {
+     height: 90px;
+    padding-left: 34px;
+    padding-top: 4px;
+    width: 156px;
+}
+
+/* nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #080707;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+.logout a {
+  color: #ff4d4d;
+} */
+
+/* Animation for the heading */
+.heading {
+  font-size: 2rem;
+  color: #0a75ad;
+  text-align: center;
+  font-weight: 900;
+  margin: 0rem 0;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(-30px); /* Slide up effect */
+  animation: fadeInSlideDown 1.5s ease-out forwards;
+}
+
+/* Keyframes for fade-in and slide-down */
+@keyframes fadeInSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.body {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.bookTableButton {
+  background-color: #0a75ad;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bookTableButton:hover {
+  background-color: #094d75;
+}
+
+.special-offer-container {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 1200px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba\(0, 0, 0, 0.1\);
+  border-radius: 10px;
+}
+
+.special-offer-container h1 {
+  color: #0a75ad;
+  margin-bottom: 1rem;
+}
+
+.special-food {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  gap: 1.5rem;
+}
+
+.special-food img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.special-food h2 {
+  color: #0a75ad;
+  font-size: 1.5rem;
+}
+
+.special-food p {
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.feature {
+  flex: 1;
+  text-align: center;
+  color: #0a75ad;
+  font-weight: bold;
+}
+
+.feature-icon {
+  font-size: 1.2rem;
+  color: #ffd700;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+/* Navigation Bar Styling */
+/* nav {
+  background-color: #0a75ad; 
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+} */
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Spacing between menu items */
+}
+
+.nav-links li {
+  position: relative; /* Required for underline hover effect */
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #070606; /* Text color */
+  transition: color 0.3s ease; /* Smooth transition for text color */
+  padding: 0.5rem 0; /* Padding for clickable area */
+}
+
+.nav-links a:hover {
+  color: #ffd700; /* Change text color on hover */
+}
+
+/* Hover Effect - Underline Animation */
+.nav-links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffd700; /* Underline color */
+  transition: width 0.3s ease; /* Smooth underline animation */
+  margin: 0 auto; /* Center the underline */
+}
+
+.nav-links a:hover::after {
+  width: 100%; /* Fully visible underline on hover */
+}
+
+/* Logout Button Special Styling */
+.logout a {
+  color: #ff4d4d; /* Distinctive color for logout */
+}
+
+.logout a:hover {
+  color: #ff3333; /* Darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 1.2rem; /* Larger font size for mobile */
+    text-align: center;
+  }
+}
+/* Special Features Container */
+.special-feature-container {
+  max-width: 1200px;
+  margin: 3rem auto;
+  text-align: center;
+  padding: 1rem;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Heading for Special Features */
+.feature-heading {
+  font-size: 2rem;
+  color: #0a75ad;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+/* Flexbox layout for cards */
+.special-features {
+  display: flex;
+  gap: 10rem; /* Space between the cards */
+  justify-content: center; /* Center align the cards */
+  flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
+}
+.bar{
+  border: 0;
+    height: 2px;
+    background-color: #333; /* Change to desired color */
+    margin: 20px 0; /* Adjust spacing */
+}
+
+/* Individual Special Feature Card */
+.special-feature {
+  flex: 1 1 45%; /* Flex-grow: 1, Flex-shrink: 1, Base size: 45% */
+  max-width: 500px; /* Limit card width */
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensures content doesn't overflow card boundaries */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.special-feature:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+/* Feature Image */
+.feature-image {
+  width: 100%; /* Image takes the full width of the card */
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd; /* Separates the image from content */
+}
+
+/* Feature Content */
+.feature-content {
+  padding: 1rem;
+  text-align: left;
+}
+
+.feature-content h2 {
+  font-size: 1.5rem;
+  color: #0a75ad;
+  margin-bottom: 0.5rem;
+}
+
+.feature-content p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Order Now Button */
+.order-now-button {
+  display: inline-block;
+  background-color: #0a75ad;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-now-button:hover {
+  background-color: #094d75;
+}
+
+/* Responsive Design for Cards */
+@media (max-width: 768px) {
+  .special-feature {
+    flex: 1 1 100%; /* Cards take full width on smaller screens */
+  }
+}
