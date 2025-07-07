@@ -35,6 +35,7 @@ import { SuccessMessageDialogComponentComponent } from './success-message-dialog
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
+import { NavComponent } from './nav/nav.component';
 
 
 
@@ -68,6 +69,7 @@ import { FooterComponent } from './footer/footer.component';
     SuccessMessageDialogComponentComponent,
     SlideshowComponent,
     FooterComponent,
+    NavComponent,
   ],
   imports: [
     BrowserModule,

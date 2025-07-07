@@ -1,32 +1,41 @@
 /* Ultra-minimal, budget-friendly CSS for About page */
 
+.about-header-logo {
+  position: absolute;
+  top: 18px;
+  left: 24px;
+  width: 108px;
+  height: 105px;
+  object-fit: cover;
+  border-radius: 0%;
+  background: #fff;
+  box-shadow: 0 2px 8px 0 #e0cba7;
+  border: 2px solid #fffbe7;
+  z-index: 10;
+  margin: 0;
+}
+.about-header-logo-fixed {
+  position: absolute;
+  top: 18px;
+  left: 24px;
+}
 .about-header {
   width: 100%;
   background: linear-gradient(90deg, #fffbe7 60%, #ffe5c2 100%);
-  padding: 2rem 0 1.2rem 0;
+  padding: 2.5rem 0 1.2rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 0 0 18px 18px;
   margin-bottom: 0.7rem;
   box-shadow: 0 2px 12px 0 #f5e1c6;
-  flex-wrap: wrap;
-}
-.about-header-logo {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 50%;
-  background: #fff;
-  margin-right: 1.5rem;
-  box-shadow: 0 2px 8px 0 #e0cba7;
-  border: 2px solid #fffbe7;
-  display: block;
+  position: relative;
+  min-height: 90px;
 }
 .about-header-title-group {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 }
 .about-header-title {
@@ -37,6 +46,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   line-height: 1.1;
+  text-align: center;
 }
 .about-header-subtitle {
   font-size: 1.1rem;
@@ -44,6 +54,7 @@
   margin-top: 0.3rem;
   font-weight: 400;
   letter-spacing: 0.5px;
+  text-align: center;
 }
 .breadcrumb-nav {
   width: 100%;
@@ -111,29 +122,26 @@
   border-radius: 8px;
 }
 @media (max-width: 900px) {
+  .about-header-logo, .about-header-logo-fixed {
+    top: 10px;
+    left: 10px;
+    width: 48px;
+    height: 48px;
+  }
   .about-header {
-    flex-direction: column;
-    align-items: center;
-    padding: 1.2rem 0 0.7rem 0;
+    padding: 2.2rem 0 0.7rem 0;
     border-radius: 0 0 12px 12px;
     box-shadow: 0 1px 6px 0 #f5e1c6;
-  }
-  .about-header-logo {
-    margin-right: 0;
-    margin-bottom: 0.7rem;
-    width: 64px;
-    height: 64px;
-  }
-  .about-header-title-group {
-    align-items: center;
-    text-align: center;
+    min-height: 70px;
   }
   .about-header-title {
     font-size: 1.2rem;
-    text-align: center;
   }
   .about-header-subtitle {
     font-size: 1rem;
+  }
+  .about-header-title-group {
+    align-items: center;
     text-align: center;
   }
   .container {
