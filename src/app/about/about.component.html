@@ -1,23 +1,86 @@
-<!-- <div class="images"><img src="../../assets/logo-for-the-family-restaurant-good-food-vector.jpg" alt="Restaurant Interior"></div> -->
-<section class="hero">
-    <div><img routerLink="/home" src="../../assets/logo-for-the-family-restaurant-good-food-vector.jpg" alt="Restaurant Interior"></div>
-    
-    <h1>About Us</h1>
-</section>
+<!-- Redesigned About Us Header with Modern Layout -->
+<header class="about-header">
+  <div class="about-header-content">
+    <img src="../../assets/Akashdeep pvtltd Logo.jpg" alt="Akashdeep Pvt Ltd Logo" class="about-header-logo about-header-logo-top" />
+    <div class="about-header-title-group">
+      <h1 class="about-header-title">About Us</h1>
+      <span class="about-header-subtitle">Discover Our Story & Values</span>
+    </div>
+  </div>
+</header>
+
+<!-- Breadcrumb Navigation -->
+<nav class="breadcrumb-nav">
+  <ul class="breadcrumb">
+    <li><a routerLink="/" class="breadcrumb-link">Home</a></li>
+    <li class="breadcrumb-separator">&#8250;</li>
+    <li class="breadcrumb-current">About Us</li>
+  </ul>
+</nav>
+
 <main>
     <div class="container">
-        <h2>Our Story</h2>
-        <p>Family Restaurant is sprouting its sapling in the beautiful, vibrant city of Fuquay Varina. We serve the most authentic, traditional Indian food, providing high standards in service and quality.</p>
-        <h2>Our Team</h2>
-        <p>We have a dedicated team of chefs, servers, and staff who are passionate about providing you with the best
-            dining experience.</p>
+        <!-- Our Story Section -->
+        <h2 class="section-heading">Our Story</h2>
+        <div class="content-with-image left-content wider-content">
+            <div class="content-text wider-text">
+                <p>
+                    Food is the lifeline of a human being. Without food, no living being can survive, whether it is a plant or an animal.
+                    It is a known fact that food is the source of energy for all. However, only humans have countless choices in everything,
+                    including food. Humans desire to consume food in various forms. Even if it is a single vegetable or grain, they enjoy it
+                    in hundreds of different names and preparations.<br><br>
+
+                    Our company, "Shri Akashadeepa Food Private Limited," brings together a blend of uniqueness, systematic cleanliness,
+                    and excellence in food preparation. We cook and serve meals that bring happiness to both the mind and heart of our customers.
+                    For the past five years, we have been offering continuous service to our customers with this goal in mind.<br><br>
+
+                    The beginning of our company itself is an interesting story. In our family, which consisted of six members — two parents and
+                    four children — we were leading a difficult life without capital and struggling to make ends meet. Amidst managing household
+                    expenses, nurturing children, and their education, our lives took an unexpected turn overnight due to a small incident that left
+                    us empty-handed.<br><br>
+
+                    The result of that incident was the creation of "Mane Aduge Halli Uta" (Home-Cooked Village Meal). Starting with this name,
+                    Shri Akashadeepa Food Private Limited has grown steadily and has now become a successful enterprise. Today, we directly provide
+                    employment to around 25 people and indirectly to more than 10 others. Through this growth, our business has brought us financial
+                    stability and prosperity.<br><br>
+
+                    I am forever indebted to the COVID-19 pandemic (Corona 19) for being the turning point that allowed us to rebuild and reshape
+                    our lives. I always remember those days and strive to protect and grow our present life. I offer my gratitude and prayers to
+                    nature, God, the divine, and our customers for blessing us with this opportunity and support.
+                </p>
+            </div>
+            <img src="../../assets/fullMealFood.jpeg" alt="Our Story Image" class="section-image medium-image">
+        </div>
+
+        <!-- Our Team Section -->
+        <h2 class="section-heading">Our Team</h2>
+        <div class="content-with-image right-content wider-content">
+            <img src="../../assets/our-team.jpg" alt="Our Team Image" class="section-image medium-image">
+            <div class="content-text wider-text">
+                <p>
+                    We have a dedicated team of chefs, servers, and staff who are passionate about providing you with the best dining experience.
+                    Our team works tirelessly to ensure that every meal served is fresh, delicious, and memorable.
+                </p>
+            </div>
+        </div>
+
+        <!-- Catering Services Section -->
+        <h2 class="section-heading">Catering Services</h2>
+        <div class="content-with-image left-content wider-content">
+            <div class="content-text wider-text">
+                <p>
+                    Shri Akashadeepa Food Private Limited is proud to offer high-quality catering services for all kinds of events, including
+                    weddings, corporate gatherings, birthday celebrations, and more. Our catering team specializes in creating customized menus
+                    tailored to your preferences and requirements.<br><br>
+
+                    We emphasize fresh ingredients, traditional recipes, and unparalleled service to make your event truly memorable.
+                    Whether you need a simple buffet or an elaborate multi-course meal, we ensure that every dish meets our high standards of
+                    quality and taste.
+                </p>
+            </div>
+            <img src="../../assets/catering-services.jpg" alt="Catering Services Image" class="section-image medium-image">
+        </div>
     </div>
 </main>
-<footer>
-    <p>&copy; 2023 Family Restaurant. All rights reserved.</p>
-</footer>
 
-
-
-
-
+<app-footer></app-footer>

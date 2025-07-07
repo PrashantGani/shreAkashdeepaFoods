@@ -1,0 +1,79 @@
+footer {
+  background-color: #0c0c96; /* Dark blue-gray background */
+  color: #ffffff; /* White text for contrast */
+  padding: 40px 20px; /* Spacing around the footer */
+  font-family: 'Arial', sans-serif; /* Clean, modern font */
+}
+
+.footer-content {
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between columns */
+  flex-wrap: wrap; /* Wrap content on smaller screens */
+  gap: 20px; /* Spacing between columns */
+  max-width: 1200px; /* Limit footer width */
+  margin: 0 auto; /* Center the content */
+}
+
+.footer-logo img {
+  width: 112px; /* Resize the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.footer-contact {
+  font-size: 0.9rem; /* Slightly smaller text */
+  line-height: 1.6; /* Improve readability */
+}
+
+.footer-social a {
+  margin-right: 10px; /* Spacing between social icons */
+  text-decoration: none; /* Remove underline */
+}
+
+.footer-social img {
+  width: 30px; /* Set size for social media icons */
+  height: 30px; /* Ensure square icons */
+  border-radius: 50%; /* Optional: make icons circular */
+}
+
+.footer-menu ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Reset padding */
+  margin: 0; /* Reset margin */
+}
+
+.footer-menu li {
+  margin-bottom: 10px; /* Space between menu items */
+}
+
+.footer-menu a {
+  color: #ffffff; /* White text for links */
+  text-decoration: none; /* Remove underline */
+  font-size: 0.9rem; /* Slightly smaller font */
+}
+
+.footer-menu a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.footer-bottom {
+  text-align: center; /* Center the text */
+  margin-top: 20px; /* Space above the bottom section */
+  font-size: 0.8rem; /* Smaller font size */
+  color: #bdc3c7; /* Light gray text for copyright */
+}
+
+.footer-bottom p {
+  margin: 0; /* Remove default margin */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack columns vertically */
+    text-align: center; /* Center-align text for all sections */
+  }
+
+  .footer-social img {
+    margin: 5px; /* Add spacing between icons */
+  }
+}

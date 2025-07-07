@@ -33,6 +33,8 @@ import { HomeImageComponent } from './home-image/home-image.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { SuccessMessageDialogComponentComponent } from './success-message-dialog-component/success-message-dialog-component.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -65,13 +67,15 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
     HomeImageComponent,
     SuccessMessageDialogComponentComponent,
     SlideshowComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    MatDialogModule
+    MatDialogModule,
+    BrowserAnimationsModule
 
   ],
   providers: [],

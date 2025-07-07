@@ -1,27 +1,50 @@
-<header>
-  <img
-    src="../../assets/Akashdeep pvtltd Logo.jpg"
-    alt=""
-    id="restoLogo"/>
-  <nav>
+<!-- Redesigned Header: Modern, Clean, Minimal -->
+<header class="modern-header">
+  <div class="header-left">
+    <img
+      src="../../assets/Akashdeep pvtltd Logo.jpg"
+      alt="Akashadeepa Foods Pvt. Ltd. Logo"
+      id="restoLogo"
+    />
+  </div>
+  <nav class="header-nav">
     <ul class="nav-links">
-      <li><a href="#" routerLink="/MenuSelection">About</a></li>
-      <li><a href="#" routerLink="/Services">Services</a></li>
-      <li><a href="#" routerLink="/About">Menu</a></li>
-      <li><a href="#" routerLink="/OrderOnline">Food Products</a></li>
-      <li><a href="#" routerLink="/Contact">Contact</a></li>
-      <li><a href="#" routerLink="/OrderOnline">Order Online</a></li>
-      <li class="logout"><a href="#" routerLink="/Login">Login</a></li>
+      <li><a routerLink="/About">About</a></li>
+      <li><a routerLink="/Services">Services</a></li>
+      <li><a routerLink="/Menu">Menu</a></li>
+      <li><a routerLink="/OrderOnline">Food Products</a></li>
+      <li><a routerLink="/Contact">Contact</a></li>
+      <li><a routerLink="/OrderOnline">Order Online</a></li>
+      <li class="logout"><a routerLink="/Login">Login</a></li>
     </ul>
   </nav>
 </header>
-<hr class="bar">
-<h1 class="heading">SHRI AKASHDEEPA FOOD PRIVATE LIMITED</h1>
-<div class="body">
- 
-  <div class="special-feature-container">
-    <div class="special-features">
-    
+<hr class="bar" />
+
+<!-- Hero Section (No logo, no subtitle) -->
+<section class="hero-section">
+  <div class="hero-content">
+    <h1 class="hero-title">Welcome to Shree Akashdeepa Foods Pvt Ltd</h1>
+    <div class="hero-cta-wrapper">
+      <a href="/OrderOnline" class="hero-cta">Order Online</a>
+    </div>
+  </div>
+</section>
+
+<!-- Special Features Section -->
+<div class="special-feature-container">
+  <h2 class="feature-heading">Our Signature Experiences</h2>
+  <p class="signature-desc">
+    Discover the heart and soul of Karnataka cuisine through our signature
+    experiences. Each dish is a celebration of tradition, flavor, and the warmth
+    of home-cooked meals. Whether you crave a hearty village meal or a vibrant
+    breakfast, we bring you the best of local culinary heritage, crafted with
+    love and care. Our chefs use time-honored recipes and the freshest
+    ingredients to ensure every bite is memorable. Join us for a journey through
+    Karnataka’s rich food culture!
+  </p>
+  <div class="special-features">
+    <!-- Mane Aduge Halli Uta Card -->
     <div class="special-feature">
       <img
         src="../../assets/Mane Aduge Logo.jpg"
@@ -31,13 +54,14 @@
       <div class="feature-content">
         <h2>Mane Aduge Halli Uta</h2>
         <p>
-          Experience the authentic taste of rural Karnataka with our "Mane Aduge
-          Halli Uta" - a wholesome, traditional meal that combines the richness
-          of fresh, local ingredients and time-honored recipes. Enjoy dishes
-          like Ragi Mudde, Soppu Saaru, Ghee Rice, and more, served with love
-          and warmth that reminds you of home.
+          Experience the authentic taste of rural Karnataka with our traditional
+          meal, combining the richness of fresh, local ingredients and time-honored
+          recipes. Enjoy Ragi Mudde, Soppu Saaru, Ghee Rice, and more, served with
+          love and warmth. Our Halli Uta is not just a meal—it's a journey into the
+          heart of Karnataka’s villages, where every dish tells a story of
+          tradition and togetherness.
         </p>
-        <button class="order-now-button">Order Now</button>
+        <a href="/OrderOnline" class="order-now-button">Order Now</a>
       </div>
     </div>
 
@@ -51,171 +75,71 @@
       <div class="feature-content">
         <h2>Mane Aduge Halli Tindi</h2>
         <p>
-          Relish the flavors of traditional Karnataka breakfasts with "Mane
-          Aduge Halli Tindi." From crispy Ragi Rotti to soft Akki Rotti,
-          flavorful Chutneys, and the ever-delicious Benne Dose, our Halli Tindi
-          menu brings you the best of Karnataka's culinary heritage for a
-          perfect start to your day.
+          Relish the authentic flavors of Karnataka breakfasts: Ragi Rotti, Akki
+          Rotti, Benne Dose, Idli, Vada, Uppittu, and Kesari Bath, served hot with
+          traditional Sambar and chutneys. Our Halli Tindi menu is perfect for
+          those who want to start their day with a burst of flavor and nutrition,
+          just like in a true Karnataka home.Start your morning with a taste of tradition and the comfort of home. 
         </p>
-        <button class="order-now-button">Order Now</button>
+        <a href="/OrderOnline" class="order-now-button">Order Now</a>
       </div>
     </div>
   </div>
 </div>
-</div>
 
-<app-slideshow></app-slideshow>
-<div class="special-offer-container">
-  <h1>Today's Special </h1>
-  <h1>&#8595;</h1>
-  <div class="special-food">
-    <img
-      src="../../assets/BiriyaniSpecial.jpeg"
-      alt="Special Offer Image"
-      class="offer-image"
-    />
-    <h2>Special Hyderabad Dum Biriyani</h2>
-    <p class="Template"><strong>Special Hyderabad Dum Biriyani</strong></p>
+<!-- About Section -->
+<div class="about-section">
+  <div class="about-content">
+    <h2>About Us</h2>
     <p>
-      Hyderabad Dum Biriyani, a world-famous Indian delicacy, requires time and
-      experience to prepare but is well worth the effort. Long-grained rice
-      seasoned with aromatic spices like saffron and stacked with tender and
-      juicy chicken in a rich sauce. The dish is then covered, and the lid is
-      fastened with dough before the biryani is cooked over low heat. This is
-      unquestionably a special occasion meal.
+      Shri Akashadeepa Food Private Limited brings together uniqueness, systematic
+      cleanliness, and excellence in food preparation. We cook and serve meals that
+      bring happiness to both the mind and heart. Our journey began with humble roots
+      and has grown into a successful enterprise, providing employment and spreading
+      the joy of authentic Karnataka cuisine. We are grateful to our customers and
+      nature for this opportunity.
     </p>
-  </div>
-
-  <div class="special-food">
-    <img
-      src="../../assets/How-to-Make-North-Indian-Thali-Vegetarian-7.webp"
-      alt="Special Offer Image"
-      class="offer-image"
-    />
-    <h2>Thali</h2>
-    <p class="Template"><strong>North-Indian-Thali</strong></p>
-    <p class="description">
-      It is a complete meal in itself that serves all the nutrients required for
-      a balanced diet. The typical dishes of a North Indian Thali include dal
-      (lentil), rice, vegetable curry, roti (flat bread), dahi (yogurt), papad,
-      salad, a small amount of chutney or pickle and a sweet dish.
-    </p>
-  </div>
-
-  <div class="special-food">
-    <img
-      src="../../assets/benne dosa.jfif"
-      alt="Special Offer Image"
-      class="offer-image"
-    />
-    <h2>Davangere Benne Dose</h2>
-    <p class="Template"><strong>Benne Dose</strong></p>
-    <p class="description">
-      Davanagere Benne Dose is made from rice and urad dal batter fermented
-      overnight. Light and crispy frying, topped with butter makes Davanagere
-      benne Dose special.
-    </p>
-  </div>
-
-  <div class="features">
-    <div class="feature">
-      <span class="feature-icon"><span>&#10003;</span></span>
-      Quality and Fresh Ingredients
-    </div>
-    <div class="feature">
-      <span class="feature-icon"><span>&#10003;</span></span>
-      House-made from scratch
-    </div>
-    <div class="feature">
-      <span class="feature-icon"><span>&#10003;</span></span>
-      Authentic Original Taste
-    </div>
-  </div>
-
-  <button class="order-button">Order Now</button>
-</div>
-<div class="client-reviews-container">
-  <h2>Our Clients Reviews</h2>
-  <p class="sayabtus">What our clients say about us</p>
-  <div class="star-ratings">
-    <span class="star">&#9733;</span>
-    <span class="star">&#9733;</span>
-    <span class="star">&#9733;</span>
-    <span class="star">&#9733;</span>
-    <span class="star">&#9733;</span>
-  </div>
-</div>
-
-<div class="client-reviews-container">
-  <div class="client-review">
-    <h3>Ganavi</h3>
-    <p class="review-meta">Local Guide</p>
-    <p>The ambience of the pace is superb.</p>
-  </div>
-
-  <div class="client-review">
-    <h3>Santhosh</h3>
-    <p class="review-meta">Local Guide</p>
-    <p>Excellent food and great service .</p>
-  </div>
-
-  <div class="client-review">
-    <h3>Aishwarya</h3>
-    <p class="review-meta">Local Guide</p>
     <p>
-      The food was authentic and delicious. The menu is reasonably priced and
-      the portion was generous; I couldn’t finish my plate and ended up asking
-      for a box to takeout. Employees were super nice and welcoming. Will visit
-      this place again!
+      Our mission is to preserve and promote the rich culinary traditions of Karnataka.
+      We believe that food is not just sustenance, but a way to connect with our roots,
+      celebrate our culture, and bring people together. Every meal we serve is a tribute
+      to the flavors, stories, and values that define our land. Join us and become a part
+      of our ever-growing family, where every guest is cherished and every meal is a
+      celebration!
     </p>
+    <a href="/About" class="read-more-btn">Read More</a>
   </div>
-
-  <div class="client-review">
-    <h3>Hemanth</h3>
-    <p class="review-meta">Local Guide</p>
-    <p>
-      This is a best family restaurant with lot of very nice item on their menu,
-      including the very good vegetarian items. The dal tadka is simply superb.
-    </p>
+  <div class="about-image">
+    <img
+      src="../../assets/Jolada_Rotti__Image.jpg"
+      alt="Akashadeepa Foods About Us"
+    />
   </div>
-
-  <a href="#" class="view-all-reviews">View All Reviews</a>
 </div>
-<footer>
-  <div class="footer-content">
-    <div class="footer-logo">
-      <img
-        src="../../assets/logo-for-the-family-restaurant-good-food-vector.jpg"
-        alt="Hotel Logo"
-        id="footerimg"
-      />
+
+<!-- Why Choose Us Section -->
+<div class="highlighted-features">
+  <h2 class="features-heading">Why Choose Us?</h2>
+  <div class="features-list">
+    <div class="feature-item">
+      <span class="material-icons feature-icon">opacity</span>
+      <h3>Purity</h3>
+      <p>
+        We ensure the purest ingredients for the best flavors and health benefits.
+      </p>
     </div>
-    <div class="footer-contact">
-      <p>#2188 Nuthan collage Road Near coffee day Vidhya Nagar</p>
-      <p>Davangere -577005</p>
-      <p>Email: akashdeepafoodsdvg@gmail.com</p>
-      <p>Phone: +91-63-6354 3487 , +91-799 6666 199</p>
+    <div class="feature-item">
+      <span class="material-icons feature-icon">eco</span>
+      <h3>Freshness</h3>
+      <p>Unmatched freshness with our farm-to-table approach.</p>
     </div>
-    <div class="footer-social">
-      <a href="#"
-        ><img src="../../assets/fb.png" alt="Facebook" class="fb"
-      /></a>
-      <a href="#"
-        ><img src="../../assets/twitte.png" alt="Twitter" class="tw"
-      /></a>
-      <a href="#"
-        ><img src="../../assets/insta.jfif" alt="Instagram" class="insta"
-      /></a>
-    </div>
-    <div class="footer-menu">
-      <ul>
-        <li><a href="http://localhost:4200/home">Home</a></li>
-        <li><a href="http://localhost:4200/Services">Services</a></li>
-        <li><a href="http://localhost:4200/Contact" routerLink="/Contact">Contact</a></li>
-      </ul>
+    <div class="feature-item">
+      <span class="material-icons feature-icon">favorite</span>
+      <h3>Healthy</h3>
+      <p>Balanced nutrition for a healthy lifestyle.</p>
     </div>
   </div>
-  <div class="footer-bottom">
-    <p>&copy; 2023 Your Hotel. All rights reserved.</p>
-  </div>
-</footer>
+</div>
+
+<!-- Footer -->
+<app-footer></app-footer>

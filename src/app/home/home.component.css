@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +5,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
   line-height: 1.6;
   color: #333;
   background-color: #f8f9fa;
@@ -14,49 +13,364 @@ body {
   padding: 0;
 }
 
-header {
-  background: white;
-  color: #fff;
-  padding: -1rem 2rem;
+/* Modern Header Redesign */
+.modern-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 0.7rem 2.5rem 0.7rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  min-height: 70px;
 }
-
+.header-left {
+  display: flex;
+  align-items: center;
+}
 #restoLogo {
-     height: 90px;
-    padding-left: 34px;
-    padding-top: 4px;
-    width: 156px;
+  height: 60px;
+  width: 110px;
+  margin-right: 0.5rem;
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+  object-fit: contain;
+  padding: 0;
 }
-
-/* nav ul {
+.header-nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2.2rem;
+  margin: 0;
+  align-items: center;
 }
-
-nav a {
+.nav-links li {
+  position: relative;
+}
+.nav-links a {
   text-decoration: none;
-  color: #080707;
-  font-weight: bold;
-  transition: color 0.3s;
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #d35400;
+  background: none;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+  position: relative;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
 }
-
-nav a:hover {
-  color: #ffd700;
+.nav-links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2.5px;
+  background: linear-gradient(90deg, #d35400 60%, #f39c12 100%);
+  transition: width 0.3s;
+  border-radius: 2px;
+  margin: 0 auto;
 }
-
+.nav-links a:hover {
+  color: #fff;
+  background: linear-gradient(90deg, #d35400 60%, #f39c12 100%);
+}
+.nav-links a:hover::after {
+  width: 100%;
+}
 .logout a {
-  color: #ff4d4d;
-} */
+  color: #fff;
+  background: linear-gradient(90deg, #ff4d4d 60%, #ff3333 100%);
+}
+.logout a:hover {
+  background: linear-gradient(90deg, #ff3333 60%, #ff4d4d 100%);
+}
 
+/* Header and Navigation - Vibrant Colors */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #ffb347 0%, #ffcc33 100%);
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  box-shadow: 0 2px 12px rgba(255, 179, 71, 0.18);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+#restoLogo {
+  height: 70px;
+  width: 120px;
+  margin-right: 2rem;
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+  object-fit: contain;
+  padding: 0;
+}
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+}
+.nav-links a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90deg, #d35400 60%, #f39c12 100%);
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 8px rgba(211,84,0,0.10);
+}
+.nav-links a:hover {
+  background: linear-gradient(90deg, #f39c12 60%, #d35400 100%);
+  color: #fffbe7;
+  box-shadow: 0 4px 16px rgba(243,156,18,0.18);
+}
+.logout a {
+  background: linear-gradient(90deg, #ff4d4d 60%, #ff3333 100%);
+  color: #fff;
+}
+.logout a:hover {
+  background: linear-gradient(90deg, #ff3333 60%, #ff4d4d 100%);
+}
+
+/* Hero Section - More Vibrant */
+.hero-section {
+  background: linear-gradient(rgba(255, 204, 51, 0.7), rgba(243, 156, 18, 0.5)), url('../../assets/homePageFoodIamge.webp') center/cover no-repeat;
+}
+.hero-title {
+  color: #0c0c96;
+  background: linear-gradient(90deg, #0c0c96 10%, #ffb347 60%, #d35400 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: 'Montserrat', 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.7rem;
+  text-shadow: 0 2px 8px rgba(12, 12, 150, 0.10);
+  line-height: 1.15;
+  padding-bottom: 0.2em;
+  display: inline-block;
+  text-transform: uppercase;
+}
+@supports not (-webkit-background-clip: text) {
+  .hero-title {
+    color: #0c0c96;
+    background: none;
+    -webkit-text-fill-color: initial;
+  }
+}
+.hero-cta {
+  background: linear-gradient(90deg, #ff6600 0%, #ffb347 60%, #d35400 100%);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  padding: 0.9rem 2.2rem;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 16px rgba(255, 179, 71, 0.18);
+  transition: background 0.3s, transform 0.2s;
+  text-shadow: 0 2px 8px rgba(255, 179, 71, 0.10);
+}
+.hero-cta:hover {
+  background: linear-gradient(90deg, #d35400 0%, #ff6600 100%);
+  color: #fff;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(243,156,18,0.18);
+}
+
+/* Centering wrapper for the hero cta */
+.hero-cta-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.2rem;
+  width: 100%;
+}
+
+/* Special Features Section - Card Colors */
+.special-feature-container {
+  background: linear-gradient(120deg, #fffbe7 60%, #ffe5b4 100%);
+}
+.special-feature {
+  background: #fff8e1;
+  border: 1px solid #ffd180;
+}
+.special-feature:hover {
+  box-shadow: 0 8px 24px rgba(255, 179, 71, 0.18);
+}
+.feature-heading {
+  color: #d35400;
+}
+.order-now-button {
+  background: linear-gradient(90deg, #d35400 60%, #ffb347 100%);
+  color: #fff;
+  margin-bottom: 2.5rem; /* More space below the button */
+}
+.order-now-button:hover {
+  background: linear-gradient(90deg, #ffb347 60%, #d35400 100%);
+}
+
+/* About Section - Warm Colors */
+.about-section {
+  background: linear-gradient(120deg, #fffbe7 60%, #ffe5b4 100%);
+}
+.about-content h2 {
+  color: #d35400;
+}
+
+/* Highlighted Features Section - Vibrant */
+.highlighted-features {
+  background: linear-gradient(120deg, #fffbe7 60%, #ffe5b4 100%);
+}
+.features-heading {
+  color: #d35400;
+}
+.feature-item {
+  background: #fff8e1;
+  border: 1px solid #ffd180;
+}
+.feature-item:hover {
+  box-shadow: 0 8px 24px rgba(255, 179, 71, 0.18);
+}
+.feature-icon {
+  color: #d35400;
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 1rem;
+  }
+  nav {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+    width: 100%;
+  }
+  #restoLogo {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Hero Section Styles */
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  background: linear-gradient(rgba(17, 18, 18, 0.5), rgba(0,0,0,0.3)), url('../../assets/Awesome-4K-Food-Wallpaper-HD.jpeg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  overflow: hidden;
+}
+.hero-content {
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  padding: 2rem 1rem;
+  animation: fadeInUp 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.hero-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  margin-bottom: 1.2rem;
+  background: #fff;
+  object-fit: cover;
+  animation: popIn 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 6.7rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  animation: fadeInSlideDown 1.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.hero-subtitle {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+  animation: fadeInUp 1.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.hero-cta {
+  display: inline-block;
+  background: linear-gradient(90deg, #d35400 60%, #f39c12 100%);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.9rem 2.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(211,84,0,0.18);
+  transition: background 0.3s, transform 0.2s;
+  animation: popIn 2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.hero-cta:hover {
+  background: linear-gradient(90deg, #f39c12 60%, #d35400 100%);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(243,156,18,0.18);
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInSlideDown {
+  0% { opacity: 0; transform: translateY(-30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0.7); }
+  80% { opacity: 1; transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Style for the full-page image */
+.about-image img {
+     /* display: block; */
+    width: 100%; /* Makes the image cover the full width of the page */
+    height: 100vh; /* Makes the image cover the full viewport height */
+    object-fit: cover; /* Ensures the image scales properly without distortion */
+    margin: 0; /* Removes any default margin */
+    padding: 0; /* Removes any default padding */
+}
 /* Animation for the heading */
 .heading {
   font-size: 2rem;
-  color: #0a75ad;
+  font-family: sans-serif;
+  color: #0c0c96;
   text-align: center;
-  font-weight: 900;
+  font-weight: 600;
   margin: 0rem 0;
   opacity: 0; /* Initially hidden */
   transform: translateY(-30px); /* Slide up effect */
@@ -183,10 +497,17 @@ nav a:hover {
   color: #070606; /* Text color */
   transition: color 0.3s ease; /* Smooth transition for text color */
   padding: 0.5rem 0; /* Padding for clickable area */
+  background: none !important;
+  color: #d35400;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: none;
 }
 
 .nav-links a:hover {
-  color: #ffd700; /* Change text color on hover */
+  color: #f39c12;
+  background: none !important;
 }
 
 /* Hover Effect - Underline Animation */
@@ -207,10 +528,12 @@ nav a:hover {
 /* Logout Button Special Styling */
 .logout a {
   color: #ff4d4d; /* Distinctive color for logout */
+  background: none !important;
 }
 
 .logout a:hover {
-  color: #ff3333; /* Darker red on hover */
+  color: #fff;
+  background: linear-gradient(90deg, #ff3333 60%, #ff4d4d 100%);
 }
 
 /* Responsive Design */
@@ -237,7 +560,6 @@ nav a:hover {
   padding: 1rem;
   background: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
 }
 
 /* Heading for Special Features */
@@ -255,12 +577,12 @@ nav a:hover {
   justify-content: center; /* Center align the cards */
   flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
 }
-.bar{
-  border: 0;
+/* .bar{
+  border: 11;
     height: 2px;
-    background-color: #333; /* Change to desired color */
-    margin: 20px 0; /* Adjust spacing */
-}
+    background-color: #0a09c23d;
+    margin: 16px 0
+} */
 
 /* Individual Special Feature Card */
 .special-feature {
@@ -309,15 +631,31 @@ nav a:hover {
 
 /* Order Now Button */
 .order-now-button {
-  display: inline-block;
-  background-color: #0a75ad;
-  color: #fff;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    display: inline-block; /* Keep inline-block for padding/sizing */
+    background-color: #0a75ad;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+    
+}
+.special-feature .feature-content p {
+    margin-bottom: 10px; /* Adjust bottom margin as needed */
+}
+.special-feature .feature-content h2 {
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 15px; /* Add space below heading */
+}
+.special-feature .feature-content {
+    display: flex; /* Make this a flex container */
+    flex-direction: column; /* Stack the children vertically */
+    /* Optional: Add padding or other styles to the content area */
+    padding: 15px;
+    flex-grow: 1; /* Allow the content area to grow to fill space */
 }
 
 .order-now-button:hover {
@@ -328,5 +666,680 @@ nav a:hover {
 @media (max-width: 768px) {
   .special-feature {
     flex: 1 1 100%; /* Cards take full width on smaller screens */
+  }
+}
+.summary {
+    font-family: 'Georgia', serif; /* Elegant and readable font */
+    margin-top: 24px;
+    font-size: 15px; /* Adjust font size for visibility */
+    color: #2c3e50; /* Sophisticated dark blue-gray color */
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 15px 20px; /* Add padding for better spacing */
+    border-left: 5px solid #3498db; /* Highlight with a left border */
+    line-height: 1.6; /* Improve line spacing for readability */
+    border-radius: 5px; /* Add rounded corners for a softer look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: justify; /* Align text for neat appearance */
+}
+
+.summary:hover {
+    background-color: #ecf5fd; /* Light blue on hover for interactivity */
+    border-left-color: #2980b9; /* Darker blue border on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+.highlighted-features {
+  text-align: center;
+  margin: 50px 0; /* Adds spacing around the section */
+}
+
+.features-heading {
+  font-size: 2rem;
+  color: #2c3e50; /* Dark blue for heading */
+  margin-bottom: 20px;
+}
+
+.features-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Adds spacing between feature items */
+}
+
+.feature-item {
+  text-align: center;
+  width: 200px;
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px; /* Adds spacing below the icon */
+}
+
+.feature-item h3 {
+  font-size: 1.2rem;
+  color: #3498db; /* Blue color for feature titles */
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  font-size: 0.9rem;
+  color: #555; /* Gray color for text */
+  line-height: 1.4; /* Improves readability */
+}
+/* Highlighted Features Section */
+.highlighted-features {
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 50px 20px; /* Spacing around the section */
+  text-align: center; /* Center-align text */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 30px auto; /* Center the section */
+  max-width: 1200px; /* Limit the width for better readability */
+}
+
+.features-heading {
+  font-size: 2.5rem; /* Large font size for heading */
+  color: #2c3e50; /* Dark blue-gray for a professional look */
+  margin-bottom: 30px; /* Spacing below the heading */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+.features-list {
+  display: flex; /* Flex layout for alignment */
+  justify-content: center; /* Center the items */
+  gap: 40px; /* Space between the feature items */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.feature-item {
+  background-color: #ffffff; /* White background for feature cards */
+  padding: 20px; /* Add padding inside each card */
+  width: 250px; /* Fixed width for consistency */
+  text-align: center; /* Center-align text */
+  border-radius: 10px; /* Rounded corners for smooth edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.feature-item:hover {
+  transform: translateY(-10px); /* Slightly lift the card on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Add a stronger shadow */
+}
+
+.feature-icon {
+  font-size: 50px; /* Large icon size */
+  color: #3498db; /* Vibrant blue color for the icons */
+  margin-bottom: 15px; /* Spacing below the icon */
+}
+
+.feature-item h3 {
+  font-size: 1.5rem; /* Medium font size for feature titles */
+  color: #2c3e50; /* Dark text for readability */
+  margin-bottom: 10px; /* Spacing below the title */
+  font-weight: bold; /* Emphasize the title */
+}
+
+.feature-item p {
+  font-size: 1rem; /* Standard font size for descriptions */
+  color: #555; /* Soft gray for a clean look */
+  line-height: 1.6; /* Improve readability */
+  margin: 0; /* Remove default margins */
+}
+/* Highlighted Features Section */
+.highlighted-features {
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 30px 15px; /* Reduced spacing around the section */
+  text-align: center; /* Center-align text */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 20px auto; /* Center the section */
+  max-width: 1000px; /* Limit the width for better readability */
+}
+
+.features-heading {
+  font-size: 1.8rem; /* Slightly smaller font size for heading */
+  color: #2c3e50; /* Dark blue-gray for a professional look */
+  margin-bottom: 20px; /* Reduced spacing below the heading */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+.features-list {
+  display: flex; /* Flex layout for alignment */
+  justify-content: center; /* Center the items */
+  gap: 20px; /* Reduced space between the feature items */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.feature-item {
+  background-color: #ffffff; /* White background for feature cards */
+  padding: 15px; /* Reduced padding inside each card */
+  width: 180px; /* Smaller width for compact cards */
+  text-align: center; /* Center-align text */
+  border-radius: 8px; /* Rounded corners for smooth edges */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.feature-item:hover {
+  transform: translateY(-5px); /* Slightly lift the card on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Add a stronger shadow */
+}
+
+.feature-icon {
+  
+    font-size: 35px;
+    color: #3498db;
+    margin-left: 33px;
+    margin-bottom: -38px;
+}
+
+.feature-item h3 {
+  font-size: 1.2rem; /* Smaller font size for feature titles */
+  color: #2c3e50; /* Dark text for readability */
+  margin-bottom: 8px; /* Reduced spacing below the title */
+  font-weight: bold; /* Emphasize the title */
+}
+
+.feature-item p {
+  font-size: 0.85rem; /* Smaller font size for descriptions */
+  color: #555; /* Soft gray for a clean look */
+  line-height: 1.4; /* Improve readability */
+  margin: 0; /* Remove default margins */
+}
+/* Styling for the Important Notes / Policy Services Section */
+.policy-services {
+    /* Box Model */
+    padding: 25px; /* Add space inside the box */
+    margin: 30px auto; /* Add space above/below and center the block */
+    max-width: 1125px; /* Limit the width for readability on large screens */
+
+    /* Appearance */
+    background-color: #f9f9f900; /* Light background color */
+    /* border: 1px solid #ddd; Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    color: #333; /* Default text color */
+    font-family: sans-serif; /* Use a common sans-serif font */
+    line-height: 1.6; /* Improve readability of paragraphs */
+}
+
+/* Styling for the Heading */
+.policy-services h2 {
+    text-align: center; /* Center the heading */
+    color: #fa0303; /* A color similar to the text in the image */
+    margin-top: 0; /* Remove default top margin */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 1.8em; /* Larger font size for the heading */
+    font-weight: bold;
+}
+/* Container for the heading and image */
+.important-note-title {
+    /* This div will center the flex span block */
+    display: flex;
+    justify-content: center; /* Center the span horizontally */
+    align-items: center; /* Center the span vertically if needed (less common here) */
+    margin-bottom: 20px; /* Add space below the title block */
+    /* Inherit color from policy-services or set specifically */
+    color: #5a2d82; /* Adjust color if needed */
+}
+
+.important-note-title span {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 6px;
+}
+
+
+/* Style for the heading text within the span */
+.important-note-title span h2 {
+    margin: 0; /* Remove default margin from h2 */
+    margin-right: 10px; /* Add space between the heading text and the image */
+    font-size: 1.8em; /* Match or adjust font size as needed */
+    font-weight: bold; /* Keep bold */
+    color:#ed1111; /* Inherit color from the parent .important-note-title div */
+    /* Prevent text from wrapping if it gets too long */
+    white-space: nowrap;
+}
+
+/* Style for the image within the span */
+.important-note-title span .note-icon {
+    /* Adjust size as needed */
+    width: 30px; /* Example size */
+    height: auto;
+}
+
+.policy-services p {
+    margin-bottom: 15px; /* Space between paragraphs */
+    text-align: left; /* Align text to the left */
+}
+
+/* Styling for the Strong tag (e.g., "Dear esteemed customers:") */
+.policy-services p strong {
+    color: #333; /* Keep strong text color consistent or slightly darker */
+    font-weight: bold;
+}
+
+/* Styling for the Em tag (e.g., "(If left over...)") */
+.policy-services p em {
+    color: #c0392b; /* Use a distinct color for emphasis/warning */
+    font-style: italic; /* Keep italic style */
+    font-weight: bold; /* Make it bold to stand out more */
+}
+
+/* Optional: Add a specific style for the "Additional Service" paragraph if needed */
+
+.policy-services p:last-child {
+    font-weight: bold;
+    color: #28a745; 
+}
+/* Styling for the Catering Service Section */
+.catering-service-section {
+    /* Box Model */
+    padding: 30px; /* Add space inside the box */
+    margin: 40px auto; /* Add space above/below and center the block */
+    max-width: 1184px; /* Allow it to be slightly wider than the policy box */
+
+    /* Appearance */
+    background-color: #ffffff; /* White background */
+    border: 1px solid #e0e0e0; /* Light grey border */
+    border-radius: 10px; /* Slightly more rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+    color: #333; /* Default text color */
+    font-family: sans-serif; /* Use a common sans-serif font */
+    line-height: 1.7; /* Improve readability */
+    text-align: left; /* Default text alignment */
+}
+
+/* Styling for the Main Heading */
+.catering-service-section h2 {
+    color: #5a2d82; /* Use the brand color */
+    margin-top: 0; /* Remove default top margin */
+    margin-bottom: 25px; /* Space below the main heading */
+    font-size: 2.2em; /* Larger font size */
+    font-weight: 300;
+    font-style: italic;
+    border-bottom: 2px solid #f0f0f0; /* Add a subtle line below the heading */
+    padding-bottom: 15px; /* Space between heading text and the line */
+}
+
+/* Styling for the Subheading */
+.catering-service-section h3 {
+    color: #5a2d82; /* Use the brand color */
+    margin-top: 30px; /* Space above the subheading */
+    margin-bottom: 15px; /* Space below the subheading */
+    font-size: 2.2em; /* Font size for subheading */
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Styling for Paragraphs */
+.catering-service-section p {
+    margin-bottom: 20px; /* Space between paragraphs */
+    font-size: 1.1em; 
+    text-align: justify !important;
+    color: #070606;
+}
+
+/* Styling for the Contact List */
+.catering-service-section ul {
+    list-style: none; /* Remove default list bullets */
+    padding: 0; /* Remove default padding */
+    margin-top: 10px; /* Space above the list */
+}
+
+.catering-service-section ul li {
+    margin-bottom: 10px; /* Space between list items */
+    font-size: 1.1em; /* Match paragraph font size */
+    /* Optional: Add an icon or custom bullet */
+    /*
+    position: relative;
+    padding-left: 25px;
+    */
+}
+
+
+
+/* Styling for links within the list */
+.catering-service-section ul li a {
+    color: #007bff; /* Standard link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.catering-service-section ul li a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+/* About Section */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px; /* Space between content and image */
+  padding: 40px;
+  background-color: #f9f9f9; /* Light background for better contrast */
+  border-radius: 10px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 20px auto;
+  max-width: 1200px; /* Centered and responsive */
+}
+
+/* About Content (Text) */
+.about-content {
+  width: 60%; /* Left side takes 60% width */
+  font-family: "Roboto", Arial, sans-serif; /* Clean and modern font */
+  font-size: 16px;
+  line-height: 1.8; /* Better readability with proper line height */
+  color: #333; /* Dark gray for text for better readability */
+}
+
+.about-content h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #d35400; /* Highlighted orange color for the heading */
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about-content p {
+font-style: oblique;
+    font-weight: 500;
+    font-family: system-ui;
+    text-align: justify;
+}
+
+.about-content p:last-child {
+  margin-bottom: 0; /* Remove margin from the last paragraph */
+}
+
+/* About Image */
+
+
+.about-image img {
+  max-width: 100%; /* Image should never overflow its container */
+  /* border-radius: 10px;  */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Shadow for depth */
+  /* border: 5px solid #fff;  */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* .about-image img:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+} */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column; /* Stack content and image vertically */
+    padding: 20px;
+  }
+
+  .about-content,
+  .about-image {
+    width: 100%; /* Full-width for smaller screens */
+  }
+
+  .about-content {
+    margin-bottom: 20px; /* Add spacing between content and image */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content h2 {
+    font-size: 22px; /* Smaller heading for small screens */
+  }
+
+  .about-content p {
+    font-size: 14px; /* Smaller font size for smaller screens */
+  }
+}
+/* Read More Button */
+.read-more-btn {
+  display: inline-block;
+  margin-top: 20px; /* Space above the button */
+  padding: 12px 25px; /* Button padding for a comfortable size */
+  font-size: 16px; /* Font size for readability */
+  font-weight: 600; /* Bold text */
+  color: #fff; /* White text */
+  background-color: #d35400; /* Bright orange background */
+  text-decoration: none; /* Remove underline from link */
+  border-radius: 25px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.read-more-btn:hover {
+  background-color: #e67e22; /* Slightly lighter orange on hover */
+  transform: translateY(-2px); /* Lift the button slightly on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.read-more-btn:active {
+  transform: translateY(0); /* Reset the button position when clicked */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Softer shadow on click */
+}
+
+/* Signature Experiences Description */
+.signature-desc {
+  font-size: 1.1rem;
+  color: #0a75ad;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  text-align: center;
+  animation: fadeInUp 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Signature Experiences Section Redesign */
+.feature-heading {
+  color: #fff;
+  background: linear-gradient(90deg, #d35400 0%, #ffb347 100%);
+  padding: 0.7rem 2.5rem;
+  border-radius: 18px 18px 0 0;
+  font-size: 1.2rem;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 16px rgba(211,84,0,0.10);
+  display: inline-block;
+  margin-bottom: 0;
+}
+.signature-desc {
+  background: #fffbe7;
+  color: #d35400;
+  font-size: 1.18rem;
+  font-family: 'Montserrat', 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 600;
+  border-radius: 0 0 22px 22px;
+  box-shadow: 0 6px 24px rgba(255, 179, 71, 0.13);
+  padding: 1.5rem 2.2rem 2rem 2.2rem;
+  margin-top: 0;
+  margin-bottom: 2.2rem;
+  display: block;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 3px solid #ffb347;
+  background: linear-gradient(120deg, #fffbe7 80%, #ffe5b4 100%);
+  text-align: center;
+  letter-spacing: 0.02em;
+  line-height: 1.7;
+  /* Gradient text for main color */
+  background-clip: padding-box;
+}
+.signature-desc span, .signature-desc strong {
+  background: linear-gradient(90deg, #ff6600 10%, #ffb347 60%, #d35400 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+/* Breadcrumb Navigation Styles */
+.breadcrumb-nav {
+  width: 100%;
+  margin-bottom: 1.2rem;
+  margin-left: 0.2rem;
+}
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+.breadcrumb-link {
+  color: #d35400;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-weight: 600;
+}
+.breadcrumb-link:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+.breadcrumb-separator {
+  color: #bbb;
+  margin: 0 0.7rem;
+  font-size: 1.2rem;
+}
+.breadcrumb-current {
+  color: #888;
+  font-weight: 600;
+}
+
+/* About Section - Beautiful Card Style */
+.about-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 48px 40px 40px 40px;
+  background: linear-gradient(120deg, #fffbe7 60%, #ffe5b4 100%);
+  border-radius: 18px;
+  box-shadow: 0 6px 24px rgba(211,84,0,0.10);
+  margin: 32px auto 32px auto;
+  max-width: 1200px;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+.about-content {
+  width: 60%;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.13rem;
+  line-height: 1.8;
+  color: #333;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(255, 179, 71, 0.10);
+  padding: 2.2rem 2rem 2rem 2rem;
+  margin-bottom: 0;
+}
+.about-content h2 {
+  font-size: 2.1rem;
+  margin-bottom: 1.1rem;
+  color: #d35400;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.about-content p {
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.13rem;
+  color: #333;
+  margin-bottom: 1.2rem;
+  font-weight: 400;
+  text-align: justify;
+}
+.about-image img {
+  max-width: 350px;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(211,84,0,0.13);
+  margin-top: 1.5rem;
+}
+@media (max-width: 900px) {
+  .about-section {
+    flex-direction: column;
+    padding: 24px 10px 20px 10px;
+    gap: 20px;
+  }
+  .about-content, .about-image {
+    width: 100%;
+    max-width: 100%;
+  }
+  .about-image img {
+    max-width: 100%;
+    margin-top: 0.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.7rem 0;
+  }
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  .hero-logo img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 0.5rem;
+  }
+  .hero-heading {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .main-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .main-subtitle {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .breadcrumb-nav {
+    max-width: 100vw;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .breadcrumb {
+    margin-left: 0;
+    font-size: 0.95rem;
+    flex-wrap: wrap;
+  }
+  .container {
+    padding: 0.7rem 0.2rem;
+    margin: 10px auto;
+    border-radius: 10px;
+  }
+  .section-heading {
+    font-size: 1rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 8px 8px 0 0;
+  }
+  .content-with-image,
+  .wider-content {
+    flex-direction: column !important;
+    gap: 0.7rem;
+    align-items: stretch;
+  }
+  .content-text,
+  .wider-text {
+    max-width: 100%;
+    font-size: 0.98rem;
+    padding: 0;
+  }
+  .section-image,
+  .medium-image {
+    max-width: 100%;
+    min-width: 0;
+    margin: 0.5rem 0 0 0;
+    border-radius: 10px;
   }
 }
